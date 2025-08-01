@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="App.css" />
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>Binary Converter</h1>
+        <div class="from-to">
+
+            <div class="from-input">
+                <label>From:</label>
+                <select id="from">
+                    <option value="Binary">Binary</option>
+                    <option value="Decimal">Decimal</option>
+                </select>
+            </div>
+
+            <div class="to-input">
+                <label>To:</label>
+                <select id="to">
+                    <option value="Binary">Binary</option>
+                    <option value="Decimal">Decimal</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- input box -->
+        <div class="input-box">
+            <h1>Enter x number</h1>
+            <input type="text" name="input" id="input" placeholder="Enter value!" required />
+            <button id="clearBtn">Clear</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <!-- Output -->
+
+        <div id="output">
+
+        </div>
+
+        <!-- Binary calculator  -->
+
+        <h1>Binary calculator</h1>
+        <p>Add, Subtract, Multiply & Devide</p>
+
+        <div class="calculator">
+            <input type="number" name="value1" id="value1" placeholder="First Value" />
+            <select id="operation">
+                <option value="Addition">Addition</option>
+                <option value="Subtraction">Subtraction</option>
+                <option value="Multiplication">Multiplication</option>
+                <option value="Devision">Devision</option>
+            </select>
+            <input type="number" name="value2" id="value2" placeholder="Second Value" />
+        </div>
+
+        <div id="calculationOutPut">
+
+            
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
