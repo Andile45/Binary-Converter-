@@ -6,7 +6,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin-inline: 680px;
+  margin-inline: 480px;
   margin-top: 50px;
 }
 .main h1 {
@@ -128,4 +128,27 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 50px;
+  padding: 50px;
+  background-color: lightblue;
+}
+
+header ul li {
+  list-style: none;
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+  padding: 5px;
+  cursor: pointer;
+}
+header ul {
+  display: flex;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
