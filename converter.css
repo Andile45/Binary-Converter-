@@ -8,7 +8,7 @@
 .main h1 {
   text-align: center;
 }
-.main p {
+#intro {
   text-align: center;
 }
 #tabs {
@@ -30,6 +30,7 @@
 
 .files {
   display: flex;
+
   gap: 10px;
 }
 .f-type select {
@@ -70,4 +71,17 @@
   -moz-box-shadow: 15px 9px 61px -1px rgba(18, 17, 17, 0.78); */
   display: block;
   margin: 20px auto;
+}
+
+
+/* Temparature css */
+
+#temp{
+  display: flex;
+  flex-direction: column;
+}
+#convert{
+  margin-top: 10px;
+  background-color: lightblue;
+  padding: 9px;
 }

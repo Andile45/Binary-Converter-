@@ -13,7 +13,7 @@
 
     <div class="main">
         <h1>Converter Hub</h1>
-        <p>A Collection of useful conversion tools</p>
+        <p id="intro">A Collection of useful conversion tools</p>
 
         <!-- Buttons -->
         <div id="tabs">
@@ -36,7 +36,7 @@
                     <select id="fileType">
                         <option value="Gigabytes">Gigabytes (GB)</option>
                         <option value="Megabytes">Megabytes(MB)</option>
-                        <option value="Kilobytes">Killobyes(KB)</option>
+                        <option value="Kilobytes">Kilobyes(KB)</option>
                     </select>
                 </div>
             </div>
@@ -49,9 +49,9 @@
                 </div>
                 <div>
                     <select id="int-speed-format">
-                        <option value="mbs">Megabits/sec (Mbps)</option>
-                        <option value="gps">Gigabits/sec (Gbs)</option>
-                        <option value="kbs">Kilobits/sec (Kbs)</option>
+                        <option value="mbps">Megabits/sec (Mbps)</option>
+                        <option value="gbps">Gigabits/sec (Gbs)</option>
+                        <option value="kbps">Kilobits/sec (Kbs)</option>
                     </select>
 
                 </div>
@@ -59,9 +59,56 @@
             </div>
             <button id="calculate">Calculate</button>
             <div id="output">
-                
+
             </div>
         </div>
+
+
+        <!-- Temparature content -->
+
+        <div id="temp">
+
+            <h1>Temparature Converter</h1>
+
+            <p>Value to Convert</p>
+            <input type="number" id="tempReading" placeholder="Enter Temparature reading" />
+
+            <p>From</p>
+            <select id="temp-type">
+                <option value="cel">Celsius(°C)</option>
+                <option value="Fah">Fahreheit(°F)</option>
+            </select>
+
+            <button id="convert">Convert</button>
+
+            <div id="tempOutput">
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Scientific content -->
+
+        <div id="Scientific">
+
+            <h1>Scientific Notation Converter</h1>
+
+            <p>Standard Number</p>
+            <input type="number" id="ScientificValue" name="ScientificNo"/>
+
+            <button id="convertScientificNo">Convert</button>
+
+            <div id="scintificOutput">
+
+
+                
+            </div>
+
+        </div>
+         
 
 
     </div>
