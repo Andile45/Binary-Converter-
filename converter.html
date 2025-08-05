@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Converter Hub</title>
+    <link rel="stylesheet" href="converter.css" />
+
 </head>
+
 <body>
-    
+
+    <div class="main">
+        <h1>Converter Hub</h1>
+        <p>A Collection of useful conversion tools</p>
+
+        <!-- Buttons -->
+        <div id="tabs">
+            <button class="tab-btn" data-tab="file">File Transfter</button>
+            <button class="tab-btn" data-tab="temp">Temparature</button>
+            <button class="tab-btn" data-tab="sci">Scientific</button>
+            <button class="tab-btn" data-tab="metric">Metric</button>
+        </div>
+        <!-- 
+        File Transfer Content -->
+
+        <div id="file">
+            <h1>File Transfer Time Calculator</h1>
+            <div class="files">
+                <div class="f-size">
+                    <label>File Size </label>
+                    <input type="number" id="fileSize" min="0" />
+                </div>
+                <div class="f-type">
+                    <select id="fileType">
+                        <option value="Gigabytes">Gigabytes (GB)</option>
+                        <option value="Megabytes">Megabytes(MB)</option>
+                        <option value="Kilobytes">Killobyes(KB)</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="Int-Speed">
+                <div>
+                    <label>Internet Speed</label>
+                    <input type="number" id="Int-Speed" min="0" />
+                </div>
+                <div>
+                    <select id="int-speed-format">
+                        <option value="mbs">Megabits/sec (Mbps)</option>
+                        <option value="gps">Gigabits/sec (Gbs)</option>
+                        <option value="kbs">Kilobits/sec (Kbs)</option>
+                    </select>
+
+                </div>
+
+            </div>
+            <button id="calculate">Calculate</button>
+            <div id="output">
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="converter.js"></script>
+
 </body>
+</body>
+
 </html>

@@ -1,0 +1,73 @@
+.main {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 50px;
+  margin: 180px;
+}
+.main h1 {
+  text-align: center;
+}
+.main p {
+  text-align: center;
+}
+#tabs {
+  text-align: center;
+  justify-content: center;
+}
+#tabs button {
+  padding: 10px;
+  background-color: lightblue;
+  border: 0px solid lightblue;
+}
+#tabs button:hover {
+  border: 2px solid black;
+}
+.f-size {
+  display: flex;
+  flex-direction: column;
+}
+
+.files {
+  display: flex;
+  gap: 10px;
+}
+.f-type select {
+  width: 150px;
+  height: 40px;
+}
+.files {
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+.Int-Speed div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Int-Speed div:nth-child(2) {
+  width: 150px;
+  height: 40px;
+  margin-top: 25px;
+}
+.Int-Speed {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+#calculate {
+  display: block;
+  margin: 20px auto;
+  width: 350px;
+  height: 40px;
+}
+#output {
+  width: 350px;
+  height: 40px;
+  /* box-shadow: 15px 9px 61px -1px rgba(18, 17, 17, 0.78);
+  -webkit-box-shadow: 15px 9px 61px -1px rgba(18, 17, 17, 0.78);
+  -moz-box-shadow: 15px 9px 61px -1px rgba(18, 17, 17, 0.78); */
+  display: block;
+  margin: 20px auto;
+}
