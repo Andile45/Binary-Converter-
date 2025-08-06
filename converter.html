@@ -97,25 +97,54 @@
             <h1>Scientific Notation Converter</h1>
 
             <p>Standard Number</p>
-            <input type="number" id="ScientificValue" name="ScientificNo"/>
+            <input type="number" id="ScientificValue" name="ScientificNo" />
 
             <button id="convertScientificNo">Convert</button>
 
             <div id="scintificOutput">
 
 
-                
+
             </div>
 
         </div>
-         
 
+         <!-- Metric Prefix Converter -->
+    <div class="tab-content hidden" id="metric">
+      <h1>Metric Prefix Converter</h1>
+      <p>Value</p>
+      <input type="number" id="metricValue" value="1" />
 
+      <div class="row">
+        <div class="col">
+          <label for="from">From</label>
+          <select id="from">
+            <option value="1e9">Giga (G)</option>
+            <option value="1e6" selected>Mega (M)</option>
+            <option value="1e3">Kilo (k)</option>
+            <option value="1">Base Unit</option>
+            <option value="1e-3">Milli (m)</option>
+            <option value="1e-6">Micro (µ)</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="to">To</label>
+          <select id="to">
+            <option value="1e9">Giga (G)</option>
+            <option value="1e6">Mega (M)</option>
+            <option value="1e3" selected>Kilo (k)</option>
+            <option value="1">Base Unit</option>
+            <option value="1e-3">Milli (m)</option>
+            <option value="1e-6">Micro (µ)</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="convertMetric">Convert</button>
+      <div id="metricOutput"></div>
     </div>
+  </div>
 
-    <script src="converter.js"></script>
-
+  <script src="converter.js"></script>
 </body>
-</body>
-
 </html>
