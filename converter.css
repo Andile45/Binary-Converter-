@@ -1,91 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
 .main {
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  padding: 50px;
-  margin: 180px;
+  width: 50%;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-.main h1 {
+
+h1 {
   text-align: center;
+  color: #333;
 }
+
 #intro {
   text-align: center;
+  color: #666;
+  margin-bottom: 30px;
 }
+
 #tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #4f46e5;
+}
+
+#file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.files,
+.Int-Speed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+input[type="number"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button#calculate {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button#calculate:hover {
+  background-color: #4f46e5;
+}
+
+#output {
+  margin-top: 20px;
+  text-align: center;
+  color: #020202;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #dbe4da;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* Temparature css */
+
+#temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+#temp h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+#temp p {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #555;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 400px;
+}
+
+#temp input[type="number"],
+#temp select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#temp button#convert {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+#temp button#convert:hover {
+  background-color: #3b36c2;
+}
+
+#tempOutput {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #020202;
+  background-color: #dbe4da;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+#temp input[type="number"],
+#temp select,
+#temp button#convert,
+#tempOutput {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
   text-align: center;
   justify-content: center;
 }
-#tabs button {
-  padding: 10px;
-  background-color: lightblue;
-  border: 0px solid lightblue;
-}
-#tabs button:hover {
-  border: 2px solid black;
-}
-.f-size {
-  display: flex;
-  flex-direction: column;
-}
-
-.files {
-  display: flex;
-
-  gap: 10px;
-}
-.f-type select {
-  width: 150px;
-  height: 40px;
-}
-.files {
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-}
-.Int-Speed div:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.Int-Speed div:nth-child(2) {
-  width: 150px;
-  height: 40px;
-  margin-top: 25px;
-}
-.Int-Speed {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-#calculate {
-  display: block;
-  margin: 20px auto;
-  width: 350px;
-  height: 40px;
-}
-#output {
-  width: 350px;
-  height: 40px;
-  /* box-shadow: 15px 9px 61px -1px rgba(18, 17, 17, 0.78);
-  -webkit-box-shadow: 15px 9px 61px -1px rgba(18, 17, 17, 0.78);
-  -moz-box-shadow: 15px 9px 61px -1px rgba(18, 17, 17, 0.78); */
-  display: block;
-  margin: 20px auto;
-}
-
-
-/* Temparature css */
-
-#temp{
-  display: flex;
-  flex-direction: column;
-}
-#convert{
-  margin-top: 10px;
-  background-color: lightblue;
-  padding: 9px;
-}
-
 /* scintific css */
 
 #Scientific {
@@ -94,10 +195,9 @@
   padding: 20px 25px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: "Segoe UI", Arial, sans-serif;
 }
-
 
 #Scientific h1 {
   font-size: 20px;
@@ -113,7 +213,6 @@
   color: #444;
 }
 
-
 #Scientific input[type="number"] {
   width: 100%;
   padding: 12px;
@@ -126,14 +225,13 @@
 }
 
 #Scientific input[type="number"]:focus {
-  border-color: #4f46e5; 
+  border-color: #4f46e5;
 }
-
 
 #convertScientificNo {
   width: 100%;
   padding: 14px;
-  background: #4f46e5; 
+  background: #4f46e5;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -144,9 +242,8 @@
 }
 
 #convertScientificNo:hover {
-  background: #4338ca; 
+  background: #4338ca;
 }
-
 
 #scintificOutput {
   margin-top: 20px;
@@ -158,7 +255,6 @@
   color: #222;
   font-weight: 500;
 }
-
 
 #scintificOutput span {
   color: #4f46e5;
@@ -173,7 +269,7 @@
   padding: 20px 25px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -190,7 +286,7 @@
   color: #444;
 }
 
-#metric input[type="number"], 
+#metric input[type="number"],
 #metric select {
   width: 100%;
   padding: 12px;
@@ -201,7 +297,7 @@
   transition: border 0.3s;
 }
 
-#metric input[type="number"]:focus, 
+#metric input[type="number"]:focus,
 #metric select:focus {
   border-color: #4f46e5;
 }
@@ -209,7 +305,7 @@
 #convertMetric {
   width: 100%;
   padding: 14px;
-  background: #4f46e5; 
+  background: #4f46e5;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -219,7 +315,7 @@
 }
 
 #convertMetric:hover {
-  background: #4338ca; 
+  background: #4338ca;
 }
 
 #metricOutput {
